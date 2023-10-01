@@ -1,37 +1,36 @@
-"use client";
-import MainLoader from '../components/MainLoader';
-import {useState,useEffect} from 'react'
-import Hero from '@/components/Hero';
-import Feature from '@/components/Feature'
-import Account from '@/components/Account'
-import Review from '@/components/Review'
-import CallToAction from '@/components/CallToAction'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header';
+import Link from "next/link"
+import Navbar from './component/Navbar'
+import React from "react";
+import News from './sections/News';
+import Hero from './sections/Hero';
+import Footer from './sections/Footer';
+import Aboutus from './sections/Aboutus';
+import Elearning from './sections/Elearning';
+import Newsletter from './sections/Newsletter';
+import Testimonial from './sections/Testimonial'
+
 export default function Home() {
-  
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoading(false)
-    }, 4000)
-    return () => clearTimeout(timeout)
-  }, []);
-
-  
-  if(loading){
-    return <MainLoader/>
-  }
-
 return (
-  <main>
-      <Header/>
-  <Hero/>
-  <Feature/>
-  < Account/>
-  <CallToAction/>
-  <Review/>
-  <Footer/>
+  <main className="relative">
+    <Navbar/>
+    <section className="xl:padding-l wide:padding-r padding-b bg-pale-blue">
+    <Hero/>
+    </section>
+    <section className="padding bg-pale-blue overflow-x-hidden">
+    <Aboutus/>
+    </section>
+    <section className="padding ">
+      <News/>
+    </section>
+<section className="padding bg-pale-blue">
+<Testimonial/>
+    </section>
+    <section className="padding-x sm:py-32 py-16 w-full ">
+<Newsletter/>
+    </section>
+    <section className="padding-x bg-black padding-t pb-8">
+<Footer/>
+    </section>
   </main>
    
 )

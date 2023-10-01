@@ -4,8 +4,8 @@ import "./globals.css";
 
 // const font = Figtree ({ subsets: ['latin']})
 export const metadata = {
-  title: "an investment platform",
-  description: "this is application of one of the world's biggest music platform ",
+  title: "nextJs tutotial",
+  description: "this is a trainning for next js",
 };
 
 export default function RootLayout({ children }) {
@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body> 
-   
       {children}
       </body>
     </html>

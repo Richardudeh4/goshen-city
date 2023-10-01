@@ -1,50 +1,55 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    // "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      xs: ['12px', '16px'],
+      sm: ['14px', '20px'],
+      base: ['16px', '19.5px'],
+      lg: ['18px', '21.94px'],
+      xl: ['20px', '24.38px'],
+      '2xl': ['24px', '29.26px'],
+      '3xl': ['28px', '50px'],
+      '4xl': ['48px', '58px'],
+      '8xl': ['96px', '106px']
+    },
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        palanquin: ['Palanquin', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        croissant: ['Croissant One', 'cursive'],
+        martian: ['Martian Mono', 'monospace']
       },
-      animation: {
-        "fade-in": "fade-in 0.5s linear forwards",
-        marquee: "marquee var(--marquee-duration) linear infinite",
-        "spin-slow": "spin 4s linear infinite",
-        "spin-slower": "spin 6s linear infinite",
-        "spin-reverse": "spin-reverse 1s linear infinite",
-        "spin-reverse-slow": "spin-reverse 4s linear infinite",
-        "spin-reverse-slower": "spin-reverse 6s linear infinite",
+      colors: {
+        'primary': "#ECEEFF",
+        "coral-red": "#FF6452",
+        "slate-gray": "#6D6D6D",
+        "pale-blue": "#F5F6FF",
+        "white-400": "rgba(255, 255, 255, 0.80)"
       },
-      keyframes:{
-        "fade-in":{
-          from:{
-            opacity:0,
-         },
-          to:{
-            opacity:1,
-          },
-        },
-        marquee:{
-          "100%": {
-            transform: "translate(-50%)",
-
-          },
-        },
-        "spin-reverse":{
-          to:{
-            transform: "rotate(-360deg)",
-          },
-        },
+      boxShadow: {
+        '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
-      colors: ({colors}) => ({
-        gray: colors.neutral,
-      }),
+      backgroundImage: {
+        'hero': "url('assets/images/collection-background.svg')",
+        'card': "url('assets/images/thumbnail-background.svg')",
+        'pencil': "url('assets/images/pencil.jpg')",
       },
+      screens: {
+        "wide": "1440px"
+      }
     },
+  },
   plugins: [],
-};
+}
+
+
+   
+   

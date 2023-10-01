@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images:{
-    domains:['cdn.imagin.studio']
+    domains:['goshencityschools.com', 'images.unsplash.com']
 },
 typescript:{
 ignoreBuildErrors: true,
