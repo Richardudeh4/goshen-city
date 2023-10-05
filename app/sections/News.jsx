@@ -24,8 +24,8 @@ const News = () => {
  >
   
   <h1 className="font-croissant text-center font-bold text-4xl">Lastest Updates</h1>
-<div className="container flex justify-center items-center mx-16 mt-4 py-8 ">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-10  ">
+<div className="container flex justify-center items-center mx-2 mt-4 py-8 ">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  ">
   {
   news.map((item)=>(
     <div key={item.title} 

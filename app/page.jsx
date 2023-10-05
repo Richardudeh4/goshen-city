@@ -1,11 +1,11 @@
-import Link from "next/link"
-import Navbar from './component/Navbar'
+// import Link from "next/link"
+import Navbar from './component/Navbar';
 import React from "react";
 import News from './sections/News';
 import Hero from './sections/Hero';
 import Footer from './sections/Footer';
 import Aboutus from './sections/Aboutus';
-import Elearning from './sections/Elearning';
+// import Elearning from './sections/Elearning';
 import Newsletter from './sections/Newsletter';
 import Testimonial from './sections/Testimonial'
 
@@ -16,7 +16,7 @@ return (
     <section className="xl:padding-l wide:padding-r padding-b bg-pale-blue">
     <Hero/>
     </section>
-    <section className="padding bg-pale-blue overflow-x-hidden">
+    <section className="padding bg-pale-blue">
     <Aboutus/>
     </section>
     <section className="padding ">

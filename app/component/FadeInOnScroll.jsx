@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const FadeInOnScroll = ({ children }) => {
   const [ref, inView] = useInView({
     triggerOnce: false, // Only trigger the animation once when the element enters the viewport
-    threshold: 0.5, // Adjust this threshold as needed
+    threshold: 0.3, // Adjust this threshold as needed
   });
 
   const fadeInVariants = {

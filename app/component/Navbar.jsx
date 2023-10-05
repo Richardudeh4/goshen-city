@@ -51,15 +51,17 @@ const Navbar =()=>{
 return(
     <header className='padding-x py-8 absolute z-10 w-full'>
       <nav className='flex justify-between items-center max-container'>
-        <a href='/'>
+        <div className="relative">
+        <Link href='/'>
           <Image
             src="https://goshencityschools.com/wp-content/uploads/2021/09/School-Logo-with-name.jpg"
             alt='logo'
             width={129}
-            height={29}
-            className='m-0 w-[129px] h-[29px]'
+            height={49}
+            className='m-0'
           />
-        </a>
+        </Link>
+        </div>
         <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
           {navLinks.map((item) => (
             <li key={item.label}>
@@ -96,7 +98,7 @@ className="fixed left-0 top-0 w-full h-screen bg-black origin-top text-white p-1
             alt='logo'
             width={129}
             height={29}
-            className='m-0 w-[129px] h-[29px]'
+            className='m-0'
           />
         </a>
     <p className="cursor-pointer text-md text-white" onClick={ToggleMenu}>

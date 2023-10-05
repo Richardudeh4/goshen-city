@@ -1,6 +1,8 @@
 import { copyright } from "../assets/icons";
+
 // import { footerLogo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
+
 
 const Footer = () => {
   return (
@@ -25,7 +27,7 @@ const Footer = () => {
                 className='flex justify-center items-center w-12 h-12 bg-white rounded-full'
                 key={icon.alt}
               >
-                <a href={icon.href} blank="true">  <img src={icon.src} alt={icon.alt} width={24} height={24} /></a>
+                <a href={icon.href} target="blank">  <img src={icon.src} alt={icon.alt} width={24} height={24} /></a>
                
               </div>
             ))}
@@ -44,7 +46,7 @@ const Footer = () => {
                     className='mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray'
                     key={link.name}
                   >
-                    <a href={link.href}>{link.name}</a>
+                    <a href={link.href} target="blank">{link.name}</a>
                   </li>
                 ))}
               </ul>

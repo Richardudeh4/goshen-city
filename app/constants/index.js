@@ -1,5 +1,6 @@
-import { facebook, instagram, shieldTick, support, truckFast, star, twitter } from "../assets/icons";
+import { facebook, instagram, shieldTick, support, truckFast, star, twitter} from "../assets/icons";
 import {customer1,customer2} from '../assets/images';
+
 
 
 export const navLinks = [
@@ -13,34 +14,21 @@ export const purpose = [
   {
     title: 'Our Vision',
     text: 'Our vision at Goshen City Schools, is to build a solid academic foundation for your children’s future and raise them up in the nurture and admonition of God that they may turn out to be well-rounded gentlemen and ladies in future.',
+    images: 'https://goshencityschools.com/wp-content/uploads/2020/05/Building.jpg'
+
   },
   {
     title: 'Our Mission',
     text: 'Our mission is to inculcate in the child, values of discipline, integrity, and hard work and build in him a strong and virile character to enhance his potentials and position him for a gainful future.',
+    images:'https://goshencityschools.com/wp-content/uploads/2020/05/computer-room.jpg'
+  
   },
   { title: 'Our Goal', 
-  text: 'Our goal, is to provide all-round qualitative education for your child – academically, spiritually, morally, and socially' },
-];
-export const slider = [
-  {
-    heading: 'Standard Facilities',
-    text: 'It is important to understand that to  understand that science and technology cannot be over-emphasized we have made that our science...',
-    image:
-      'https://images.unsplash.com/photo-1608037222022-62649819f8aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlbWlzdHJ5JTIwbGFifGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
-  },
-  {
-    heading: 'Conductive Environment',
-    text: 'At Goshen city Schools, we provide our children with adequate Learning materials in spacious classrooms and the engagement of well...',
-    image:
-      'https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xhc3Nyb29tfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
-  },
-  {
-    heading: 'Blended Curriculum',
-    text: 'At Goshen city Schools, Our curriculum is a blend of the Nigerian National Basic Education Curriculum of that of Schools...',
-    image:
-      'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+  text: 'Our goal, is to provide all-round qualitative education for your child – academically, spiritually, morally, and socially',
+  images:'https://goshencityschools.com/wp-content/uploads/2020/05/Lab1.jpg'
   },
 ];
+
 
 export const About = [
   // {title : "Director's Speech", text: "Train up a child in the way he should go, and when he is old, he will not depart from it. Proverbs 22.6
@@ -113,12 +101,19 @@ export const reviews = [
       imgURL: customer1,
       customerName: 'Mr Chinedu Amadi',
       rating: 4.5,
-      feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+      feedback: "Goshen city schools is not just a school; it's a community . Our daughre has not excelled academically but has also formed strong friendships and learned essential life skills. The caring and experienced educators here make all the difference"
   },
   {
       imgURL: customer2,
       customerName: 'Mrs Eunice Udeh',
       rating: 4.5,
-      feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+      feedback: "We believe that Goshen-city schols is equipping our child not only for academic success but also for success in life . The skills and values they're acquiring here are invaluable"
   }
 ];
+export const principal = [
+{
+  img:'https://goshencityschools.com/wp-content/uploads/2020/05/prop-2edited.png',
+  title: 'Welcome to Goshen City Schools',
+  message: 'Directors Speech Train up a child in the way he should go, and when he is old he will not...'
+}
+]

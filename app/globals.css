@@ -61,3 +61,28 @@
     }
   }
   
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .slideText {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
